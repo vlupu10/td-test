@@ -1,6 +1,7 @@
 export const test01 = {
     template: require('./app.html'),
-    controller(function($scope, $log) {
-    	//$log.debugg('controller');
-    	var x = 0;
-    });
+    controller($scope, $log, Test01Service) {
+    	$scope.options = Test01Service.getData();
+    	$log.info($scope.options);
+    }
+};
