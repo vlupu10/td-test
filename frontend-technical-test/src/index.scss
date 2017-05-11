@@ -59,9 +59,16 @@ body {
 	border: 1px solid #008a00;
 	border-radius: 6px;
 	margin-top: 20px;
+	cursor: pointer;
+	span {
+		display: inline-block;
+	    vertical-align: middle;
+	    //line-height: 1em;		
+	}
 }
 .td-text5 {
 	font-size: 12px;
+	cursor: pointer;
 }
 .td-color-green {
 	color: #008a00;
