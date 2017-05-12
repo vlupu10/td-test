@@ -30,14 +30,14 @@ angular.module(app, ['ngAnimate', 'ngSanitize','ui.router', 'ui.bootstrap'])
 		scope: true,
 		controller: function ($scope, $timeout, $element, $log, $window) {
 			var setHAuto = function () {
-				var allElems = $element.find('span');
+				var allElems = $element.find('div');
 				angular.forEach(allElems, (el, i) => {
 					if (i%2 !== 0)
 					el.style.setProperty('height', 'auto');
 				});
 			};
 			var setH = function () {
-				var allElems = $element.find('span'),
+				var allElems = $element.find('div'),
 					maxH = 0;
 				angular.forEach(allElems, (el, i) => {
 					if (i%2 !== 0) {

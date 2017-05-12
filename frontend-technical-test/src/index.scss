@@ -28,12 +28,11 @@ body {
 	    display: table-cell;
 	    margin: 0;
 		.td-content {
-		    /* border: 1px solid #B2B2B2; */
 			width: 60%;
 		    background-color: #fff;
 		    margin: 0 auto;
 		    text-align: left;
-		    padding: 10px;
+		    padding: 10px 20px 10px 20px;
 		}
     }
 }
@@ -55,15 +54,17 @@ body {
 }
 .td-text4 {
 	font-size: 18px;
-	line-height: 40px;
+	line-height: 28px;
 	border: 1px solid #008a00;
 	border-radius: 6px;
 	margin-top: 20px;
 	cursor: pointer;
+	padding: 10px;
+	vertical-align: middle;
+	display: table;
 	span {
-		display: inline-block;
+		display: table-cell;
 	    vertical-align: middle;
-	    //line-height: 1em;		
 	}
 }
 .td-text5 {
