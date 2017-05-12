@@ -6,15 +6,80 @@ html, body {
 
 body {
     background-color: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
 	width: 100%;
+    padding: 0;
+    display: table;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: absolute;
     background-image: url(/assets/background.jpg);
     background-size: cover;
     background-position: top center;
+    .td-center {
+		padding: 0;
+	    vertical-align: middle;
+	    display: table-cell;
+	    margin: 0;
+		.td-content {
+			width: 60%;
+		    background-color: #fff;
+		    margin: 0 auto;
+		    text-align: left;
+		    padding: 10px 20px 10px 20px;
+		}
+    }
 }
 
+.td-mid {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
 
+.td-text1 {
+	font-size: 24px; 
+}
+.td-text2 {
+	font-size: 12px;
+}
+.td-text3 {
+	font-size: 18px;
+}
+.td-text4 {
+	font-size: 18px;
+	line-height: 28px;
+	border: 1px solid #008a00;
+	border-radius: 6px;
+	margin-top: 20px;
+	cursor: pointer;
+	padding: 10px;
+	vertical-align: middle;
+	display: table;
+	span {
+		display: table-cell;
+	    vertical-align: middle;
+	}
+}
+.td-text5 {
+	font-size: 12px;
+	cursor: pointer;
+}
+.td-color-green {
+	color: #008a00;
+}
+.td-mt20 {
+	margin-top: 20px;
+}
+.td-lang {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
 
