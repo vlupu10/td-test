@@ -4,36 +4,37 @@
 			<div>
 				<div class="row">
 					<div class="col-xs-12 col-md-12 ">
-						<span class="td-mid td-text1">Book an Appointment</span>
+						<span class="td-mid td-text1">{{'Book an Appointment'|translate}}</span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-12 ">
-						<span class="td-mid td-text2">Our Investing Topics</span>
+						<span class="td-mid td-text2">{{'Our Investing Topics'|translate}}</span>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-12 td-mt20">
-						<span class="td-mid td-text3">Pick a topic, then we'll find a time and place</span>
+						<span class="td-mid td-text3">{{'Pick a topic, then we\'ll find a time and place'|translate}}</span>
 					</div>
 				</div>
 				<div td-same-height class="row">
 					<div class="col-xs-12 col-md-6 td-color-green" ng-repeat="item in options track by item.text" ng-if="toMiddle">
-						<div class="td-mid td-text4"><span>{{item.text}}</span></div>
+						<div class="td-mid td-text4"><span>{{item.text|translate:options}}</span></div>
 					</div>
 					<div class="col-xs-12 col-md-6 td-color-green" ng-repeat="item in options track by item.text" ng-if="toLeft" style="margin-right: 30px;">
-						<div class="td-mid td-text4"><span>{{item.text}}</span></div>
+						<div class="td-mid td-text4"><span>{{item.text|translate:options}}</span></div>
 					</div>
 					<div class="col-xs-12 col-md-offset-3 col-md-6 td-color-green" ng-repeat="item in options track by item.text" ng-if="toOne">
-						<div class="td-mid td-text4"><span>{{item.text}}</span></div>
+						<div class="td-mid td-text4"><span>{{item.text|translate:options}}</span></div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-12 td-color-green td-mt20">
-					<span class="td-mid td-text5"><i class="fa fa-angle-left"></i>&nbsp;Return to previous screen</span>
+					<span class="td-mid td-text5"><i class="fa fa-angle-left"></i>&nbsp;{{'Return to previous screen'|translate}}</span>
 				</div>
 			</div>
 		</div>
 	</div>
+	<button class="btn btn-primary td-lang" ng-click="changeLang($event)">{{'French'|translate}}</button>
 </div>
