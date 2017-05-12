@@ -18,7 +18,13 @@
 					</div>
 				</div>
 				<div td-same-height class="row">
-					<div class="col-xs-12 col-md-6 td-color-green" ng-repeat="item in options track by item.text">
+					<div class="col-xs-12 col-md-6 td-color-green" ng-repeat="item in options track by item.text" ng-if="toMiddle">
+						<div class="td-mid td-text4"><span>{{item.text}}</span></div>
+					</div>
+					<div class="col-xs-12 col-md-6 td-color-green" ng-repeat="item in options track by item.text" ng-if="toLeft" style="margin-right: 30px;">
+						<div class="td-mid td-text4"><span>{{item.text}}</span></div>
+					</div>
+					<div class="col-xs-12 col-md-offset-3 col-md-6 td-color-green" ng-repeat="item in options track by item.text" ng-if="toOne">
 						<div class="td-mid td-text4"><span>{{item.text}}</span></div>
 					</div>
 				</div>

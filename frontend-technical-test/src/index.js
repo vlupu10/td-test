@@ -28,7 +28,7 @@ angular.module(app, ['ngAnimate', 'ngSanitize','ui.router', 'ui.bootstrap'])
 	return {
 		restrict: 'A',
 		scope: true,
-		controller: function ($scope, $timeout, $element, $log, $window) {
+		controller: function ($scope, $timeout, $element, $window) {
 			var setHAuto = function () {
 				var allElems = $element.find('div');
 				angular.forEach(allElems, (el, i) => {
